@@ -202,7 +202,7 @@ let passwordip=document.getElementById("4")
             }
             data.push(obj)        
         localStorage.setItem("datainfo",JSON.stringify(data ) )
-        if(obj.email!="" && obj.first!="" && obj.Sur!="" && obj.pw!="" ){
+        if(obj.email!="" && obj.first!="" && obj.Sur!="" && obj.pw!=""){
             //Countinuebtn.style.opacity=1
             window.location="welcome.html"
         }

@@ -1,0 +1,187 @@
+
+        *{
+            margin: 0px;
+        }
+        #navbar{
+            display: flex;            
+            border: 1px solid black;            
+            justify-content: space-around;
+            height: 70px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: rgb(111, 108, 108);
+        }
+        #leftside{
+            display: flex;
+            /* border: 2px dashed red; */
+            justify-content:space-between;
+            width:20%;
+        }
+        #rightside{
+            display: flex;
+            /* border: 2px dashed red; */
+            justify-content:space-between;             
+            width:25%;
+            padding-top: 25px;     
+        }
+        #navbarSelect{
+            border: none;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;            
+            color: rgb(111, 108, 108);
+        }
+        #container{
+            border: 2px dashed red; 
+            width:80%;
+            margin: auto;
+            display: flex;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+        }
+        #containerleft{
+            border: 2px solid rgb(189, 65, 86); 
+            width:90%;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        #containerright{
+            border: 2px solid darkblue; 
+            width:14%;
+            height: 700px;
+            position: sticky;
+            top: 40px;
+            z-index: 99999
+        }
+        #searchbar{
+            border: 2px solid blue;
+            height:60px; 
+        }
+        #belowsearch{
+            border: 2px solid orange; 
+            display: flex;
+            justify-content: space-between;
+            /* height:200px; */
+        }
+        #belowsearchleft{
+            border: 2px solid darkgreen; 
+            width:28%;
+            height: 160px;
+            border-radius: 10px;
+        }
+        #belowsearchright{
+            border: 2px solid darkgreen; 
+            width:70%;
+        }
+        #mapimage{
+            width:100%;
+            height: 80%;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:#3662D8;
+        }
+        #maplink{
+            margin-top: 2px;
+            margin-bottom: 10px;
+        }
+        #exploreimg{
+            width:100%;
+            height: 700px;
+        }
+        #belowsearchrightTop{
+            border: 2px solid orange; 
+            height:40%;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+        }
+        p{
+            margin: 1px;
+        }
+        #boxforp{
+            width:45%;
+            border: 2px solid blue;
+        }
+        #boxforp :nth-child(1){             
+            font-weight: lighter;
+        }
+        #Sorting{
+            width:45%;
+            
+        }
+        #belowsearchrightBottom{
+            height:60%;
+            background-color: #141D38;
+            color: white;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        #belowsearchrightBottom img{
+            width:70px;
+        }
+        #belowsearchrightBottom p{
+            display: block;
+            margin: auto;
+        }
+        #belowsearchrightBottom button{
+            display: block;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            background-color:#3662D8;
+            border: none;
+
+        }
+        #containerleftbottom{
+            border: 2px solid green;
+            display: flex; 
+            justify-content: space-between;
+        }
+        #filtersection{
+            border: 2px solid blue; 
+            width: 28%;
+            text-align: left;
+        }
+        #productsection{
+            border: 2px solid blue; 
+            width: 70%;                  
+        }
+        #search-propname{
+            width: 90%;
+            border: 1px solid rgb(52, 50, 50);
+            margin-top: 10px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: large;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .filteringsmalldivs{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+        .filteringsmalldivs input{
+            margin: 8px;
+        }
+        .heads{
+            font-weight: bold; 
+        }
+        .filteringsmalldivs button{
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 0.5px;
+        }
+        .makeItBlue{
+           color:#3662D8;
+        }
+        .makeitleft{
+            margin-left: 27px;
+        }
