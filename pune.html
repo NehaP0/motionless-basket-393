@@ -11,7 +11,7 @@
 <body>
     <div id="navbar">
         <div id="leftside"> 
-            <img src="./yatra logo image.png" alt="">
+            <a href="./index.html"><img id="logo" src="./yatra logo image.png" alt=""></a>
             <select name="More travel" id="navbarSelect">
                 <option value="">More Travel </option>
                 <option value="">Stays</option>
@@ -28,14 +28,32 @@
             <p>🌐 English</p>
             <p>Support</p>
             <p>Trips</p>
-            <p>🔔</p>
+            <button id="bell"> <a href="./sign_in.html"> 🔔</button></a>
             <p>Sign in</p>
         </div>
     </div>
 
     <div id="container">
         <div id="containerleft">
-            <div id="searchbar"></div>
+            <div id="searchbar">
+                    <select name="" id="Going_To">
+                        <option >📍 Going To</option>
+                        <option>Pune, <br> Maharashtra, India</option>
+                        <option>Pune District, <br> Maharashtra, India</option>
+                        <option> Novotel Pune Vimanagar Hotel <br>Pune, Maharashtra, India</option>
+                        <option>Koregaon Park <br>Pune, Maharashtra, India</option>
+                        <option>Radisson Blu Hotel Pune Kharadi<br>Pune, Maharashtra, India</option>
+                        <option>The Westin Pune Koregaon Park <br>Pune, Maharashtra, India</option>
+                        <option>Hotel Aurora Towers<br>Pune, Maharashtra, India</option>
+                        <option>Hotel Shreyas<br>Pune, Maharashtra, India</option>
+                        <option> 🔍 Search for "Pune, Maharashtra, India"</option>
+                    </select>
+                    <input type="date" id="Date">
+                    <select name="" id="Travellers">
+                        <option>Travellers</option>
+                    </select>
+                    <button id="searchicon">🔍</button>
+            </div>
             <div id="belowsearch">
                 <div id="belowsearchleft">
                     <img id="mapimage" src="./map.PNG" alt="error">
@@ -47,13 +65,14 @@
                         <div id="boxforp"><p>217 properties</p>
                         <p>See how we pick our recommended properties </p></div>
                     
-                        <select name="" id="Sorting" placeholder="Sort by">
-                            <option value="" >Recommended</option>
-                            <option value="">Price: low to high</option>
-                            <option value="">Price: high to low</option>
-                            <option value="">Distance from city centre</option>
-                            <option value="">Guest rating + our choices</option>
-                            <option value="">Property class</option>
+                        <select name="" id="Sorting">
+                            <option >Sort by</option>
+                            <option >Recommended</option>
+                            <option >Price: low to high</option>
+                            <option >Price: high to low</option>
+                            <option >Distance from city centre</option>
+                            <option >Guest rating + our choices</option>
+                            <option >Property class</option>
                         </select>
                     </div>
                     <div id="belowsearchrightBottom">
@@ -72,24 +91,24 @@
                     </div>
                     <h3>Filter by</h3> 
                     <div class="filteringsmalldivs"><p class="heads">Popular Filters</p>
-                        <input type="checkbox">Roll-in shower <br>
-                        <input type="checkbox">Shreemant Dagdusheth Halwai Ganpati  <br>                      
-                        <input type="checkbox">Lift <br>                       
-                        <input type="checkbox">Sign language-capable staff   <br>                     
-                        <input type="checkbox">Hot tub 
+                        <input type="checkbox" id="one" value="Roll-in shower">Roll-in shower<br>
+                        <input type="checkbox"  id="two" value="Shreemant Dagdusheth Halwai Ganpati">Shreemant Dagdusheth Halwai Ganpati<br>                      
+                        <input type="checkbox" id="three" value="Lift">Lift<br>                       
+                        <input type="checkbox" id="four" value="Sign language-capable staff">Sign language-capable staff<br>                     
+                        <input type="checkbox" id="five" value="Hot tub">Hot tub 
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Price per night</p>
-                        <input type="checkbox">Less than ₹2,000 <br>
-                        <input type="checkbox"> ₹2,000 to ₹4,000 <br>
-                        <input type="checkbox"> ₹4,000 to ₹8,000 <br>
-                        <input type="checkbox"> ₹8,000 to ₹11,000 <br>
-                        <input type="checkbox"> Greater than ₹11,000
+                        <input type="checkbox" id="twothousand" >Less than ₹2,000<br>
+                        <input type="checkbox" id="fourthousand" >₹2,000 to ₹4,000<br>
+                        <input type="checkbox" id="eightthousand" >₹4,000 to ₹8,000<br>
+                        <input type="checkbox" id="eleventhousand">₹8,000 to ₹11,000<br>
+                        <input type="checkbox" id="greaterthaneleven">Greater than ₹11,000
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Guest rating</p>
-                        <input type="checkbox"> Any <br>
-                        <input type="checkbox">Wonderful 9+ <br>
-                        <input type="checkbox">Very good 8+ <br>
-                        <input type="checkbox"> Good 7+ 
+                        <input type="checkbox" id="Any">Any<br>
+                        <input type="checkbox" id="Wonderful">Wonderful 9+<br>
+                        <input type="checkbox" id="Very_good">Very good 8+<br>
+                        <input type="checkbox" id="Good">Good 7+ 
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Property class</p>
                         <button>1 star</button>
@@ -99,7 +118,7 @@
                         <button>5 stars</button>
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Payment type</p>
-                        <input type="checkbox">Fully refundable <br>
+                        <input type="checkbox">Fully refundable<br>
                         <input type="checkbox">Reserve now. pay later
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Property type</p>
@@ -109,20 +128,20 @@
                         <p class="makeItBlue">See more</p>
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Area</p>
-                        <input type="checkbox">Pune <br>
-                        <input type="checkbox">Shivajinagar <br>
+                        <input type="checkbox">Pune<br>
+                        <input type="checkbox">Shivajinagar<br>
                         <input type="checkbox">Viman Nagar<br>
                         <p class="makeItBlue">See more</p> 
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Popular locations</p>
-                        <input type="checkbox">Balewadi High Street <br>
-                        <input type="checkbox">Shreemant Dagdusheth Halwai Ganpati <br>                        
+                        <input type="checkbox">Balewadi High Street<br>
+                        <input type="checkbox">Shreemant Dagdusheth Halwai Ganpati<br>                        
                         <input type="checkbox">Panshet Dam<br>
                         <p class="makeItBlue">See more</p>
                     </div>
                     <div class="filteringsmalldivs"><p class="heads">Meal plans available</p>
-                        <input type="checkbox">Breakfast included <br> 
-                        <input type="checkbox">Lunch included <br>
+                        <input type="checkbox">Breakfast included<br> 
+                        <input type="checkbox">Lunch included<br>
                         <input type="checkbox">Dinner included<br>
                         <p class="makeItBlue">See more</p>
                     </div>
@@ -166,103 +185,4 @@
 
 </body>
 </html>
-<script>
-    
-    let products=document.getElementById("productsection")
-    let search_propname=document.getElementById("search-propname")
- 
-    
-    fetch("https://6399ee6316b0fdad774e78ff.mockapi.io/hotels")
-    .then((fetcheddata)=>{
-        return fetcheddata.json()
-    }) 
-    .then((actualdata)=>{
-        console.log(actualdata)
-        // let NeededData=actualdata
-        DisplayIt(actualdata)
-    })
-    .catch((error)=>{
-        console.log(error)
-    })
-
-    
-
-    function DisplayIt(data){
-        data.forEach((element,index) => {
-            let card=document.createElement("div")
-            card.style.display="flex"
-            card.style.border="2px dashed red"
-            card.style. borderRadius= "20px";
-            card.style.height="200px"
-            card.style.marginTop="15px" ;
-            card.style.marginBottom="15px" ;
-
-            let leftdiv=document.createElement("div")
-            leftdiv.style.border="2px dashed green"
-            leftdiv.style. borderRadius= "20px";
-            leftdiv.style.width="40%"
-
-            let rightdiv=document.createElement("div")
-            rightdiv.style.border="2px dashed blue"
-            rightdiv.style. borderRadius= "20px";
-            rightdiv.style.width="60%"
-            rightdiv.style.padding="15px"
-
-            let Image=document.createElement("img")
-            Image.setAttribute("src", element.Image)
-            Image.style.display="flex"
-            Image.style.width="100%"
-            Image.style.height="100%"
-            Image.style. borderRadius= "20px";
-
-            let Name=document.createElement("h3")
-            Name.innerText=element.Name
-            Name.style.textAlign="left"
-
-            let Area=document.createElement("p")
-            Area.innerText=element.Area
-            Area.style.textAlign="left"
-            Area.style.fontWeight="lighter" ;   
-
-            let Amenities=document.createElement("p")
-            Amenities.innerText=element.Amenities
-            Amenities.style.textAlign="left"
-            Amenities.style.fontWeight="lighter" ;
-
-            let Payment_type=document.createElement("p")
-            Payment_type.innerText=element.Payment_type
-            Payment_type.style.textAlign="left"
-            Payment_type.style.fontWeight="lighter" ;
-
-            let Price=document.createElement("h2")
-            Price.innerText="Rs "+element.Price
-            Price.style.textAlign="right"
-
-            let text=document.createElement("p")
-            text.innerText="per night"
-            text.style.textAlign="right"
-            text.style.fontWeight="lighter" ;
-
-
-            let divforrating=document.createElement("div")
-            divforrating.style.border="2px dashed blue"
-            divforrating.style.width="75%"
-            divforrating.style.display="flex"
-
-            let Rating=document.createElement("p")
-            Rating.innerText=element.Rating+"/10"
-            Rating.style.textAlign="left"
-
-            let Review=document.createElement("p")
-            Review.innerText=" Wonderful (76 Reviews)"
-            Review.style.fontWeight="lighter"
-
-
-            divforrating.append(Rating,Review)
-            rightdiv.append(Name,Area,Amenities,Payment_type,Price,text,divforrating)
-            leftdiv.append(Image)
-            card.append(leftdiv,rightdiv)
-            products.append(card)
-        });
-    }
-</script>
+<script src="./pune.js"></script> 
