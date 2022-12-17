@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     border: 2px solid blueviolet;
-    width:90%;
+    width:93%;
     margin: auto;
 }
 #Going_To, #Date, #Travellers{
@@ -50,19 +50,33 @@
     border-radius: 10px;
     padding: 10px;
     border-width: 1px;
+    margin-left:10px;
+    margin-right:10px;
+}
+#Going_To{
+    width:80%;
 }
 #Date{
     height:29px;
 }
+#checkboxdiv{
+    border: 2px dashed blue;
+    height:30px;
+    width: 25%;
+    margin-left: 4%;
+    padding-top: 15px;
+    font-size:medium;
+    display: flex;
+    justify-content: space-between;
+}
 #searchicon{
    font-size:medium;
    border-radius: 5px;
-   padding: 15px;
+   padding: 15px 60px 15px 60px;
    background-color: #3662D8;
    border: none;
    color: white;
-   padding-left: 60px;
-   padding-right: 60px;
+   font-weight: bold;
 }
 
 
@@ -87,34 +101,194 @@
     color: #343B53;
     font-weight: bold;
 }
-#memberpricediv{
-    border: 2px dashed green;
-}
 #memberpricediv img{
     width:100%;
     opacity:0.8;
 }
+#memberpricediv{
+    background: url("https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg");
+    margin-top: 70px;
+    height:500px;
+    background-size: 100%;
+    border: 2px solid rgb(0, 255, 64);
+    opacity: 0.8;
+    border: 2px dashed green;
+    /* background-blend-mode: color-dodge; */
+}
 #Text{
-    width:90px;
-    position: absolute;
-    top: 80px;
-    left: 16px;
-    border: 10px solid black;
+    border: 2px solid rgb(0, 4, 255);    
+    margin-left:50px;   
+    margin-top:100px ;
+    width:35%;
+    color:white;
+    font-weight:400;
+    font-size: larger;
 }
-#checkboxdiv{
-    border: 2px dashed blue;
-    height:30px;
-    width: 25%;
-    margin-left: 5%;
-    padding-top: 15px;
+#Member_Prices{
     font-size:medium;
-    display: flex;
-    justify-content: space-between;
-}
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #3662D8;
+    border: none;
+    color: white;
+    font-weight: bold;
+ }
+
 #searchdiv{
     border: 2px solid orangered;
     width:14%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+#appdiv{
+    border: 2px solid rgb(4, 0, 255);
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+#appimagediv{
+    width:35%;
+}
+#appimagediv img{
+    width:100%;
+}
+#textdiv{
+    width:48%;
+    border: 2px solid rgb(255, 0, 221);
+}
+#scandiv{
+    width:13%;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+#scandiv img{
+    width:100%;
+}
+.Text_yourself{
+    font-size: large;
+    height:50px;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 1px;
+    width:31%;
+    justify-content: space-between;
+}
+#phone_number{
+    height:30px;
+}
+#Text_yourself{
+    padding: 0px;
+    font-size:medium;
+   border-radius: 5px;
+   background-color: #3662D8;
+   border: none;
+   color: white;
+   font-weight: bold;
+}
+#make_small{
+    font-size: smaller;
+}
+#DiscoverAnotherSide{
+    border: 2px solid rgb(255, 81, 0);
+    margin: auto;
+    width:80%;
+    margin-top: 100px;
+}
+#DiscoverAnotherSide img{
+    width: 100%;
+}
+#planaheaddiv{
+    border: 2px solid rgb(47, 0, 255);
+    margin-top: 50px;
+    display: flex;
+    height:250px;
+    width:80%;
+    margin-left: 12%;
+    justify-content: space-between;
+}
+#planaheaddiv>:nth-child(1){
+    border: 2px solid rgb(0, 195, 255);
+    width:75%;
+}
+#planaheaddiv>:nth-child(1) img{
+    width:100%;
+    height: 100%;
+}
+#planaheaddiv>:nth-child(2){
+    border: 2px solid rgb(0, 195, 255);
+    width:25%;
+}
+#planaheaddiv>:nth-child(2) img{
+    width:100%;
+    height: 100%;
+}
+#explore{
+    border: 2px solid rgb(174, 0, 255);
+    width:20%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#explore>:nth-child(1), #explore>:nth-child(2){
+    margin: 0px;
+    padding: 0px;
+}
+#explore>:nth-child(1){
+    font-weight: 600;
+}
+#explore>:nth-child(1){
+    color:#3662D8;
+}
+#expediagrpdiv{
+    border: 2px solid rgb(255, 8, 0);
+    width:70%;
+    margin-left: 12%;
+    margin-top: 50px;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#links{
+    border: 2px solid rgb(217, 255, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.heads{
+    font-weight: 600;
+}
+.makeitblue{
+    font-size:12px;
+    color:#3662D8;
+}
+
+#footer{
+    border: 3px dashed red;
+    width:75%;
+    margin:auto;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer>:nth-child(2){
+    margin-top: 20px;
+}
+#footer>:nth-child(3){
+    font-size:12px;
+}
+
+@media screen and (max-width:1200px){
+    #container,#navbar,#memberpricediv,#appdiv,#DiscoverAnotherSide,#planaheaddiv,#explore,#expediagrpdiv,#footer{
+    width:90%;
+    margin: auto;
+    }
+}
+@media screen and (max-width:800px) {
+    #planaheaddiv{
+     display:block;   
+    }
+    #planaheaddiv>:nth-child(1),#planaheaddiv>:nth-child(2){
+        margin: auto; 
+    }
 }
