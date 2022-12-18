@@ -1,5 +1,6 @@
 let products=document.getElementById("productsection")
 let search_propname=document.getElementById("search-propname")
+let Sign_in_button=document.getElementById("Sign_in_button")
 let Accesibility=document.querySelector("input[id=one]")
 let Location=document.querySelector("input[id=two]")
 let AccesibilitY=document.querySelector("input[id=three]")
@@ -14,6 +15,7 @@ let Any=document.querySelector("input[id=Any]")
 let Wonderful=document.querySelector("input[id=Wonderful]")
 let Very_good=document.querySelector("input[id=Very_good]")
 let Good=document.querySelector("input[id=Good]")
+let onestar=document.getElementById("1star")
 let Sorting=document.getElementById("Sorting")
 
 let NeededData=[]
@@ -32,7 +34,9 @@ let NeededData=[]
     })
 
 
-
+    Sign_in_button.addEventListener("click",()=>{
+        window.location="sign_in.html"
+    })
    
 
 
@@ -86,6 +90,9 @@ let NeededData=[]
             itsforamneties(element)
         }         
     })
+
+
+    
 
     function itsforamneties(data){
         let filtered = NeededData.filter((hotel)=>{
@@ -343,19 +350,19 @@ let NeededData=[]
         data.forEach((element,index) => {
             let card=document.createElement("div")
             card.style.display="flex"
-            card.style.border="2px dashed red"
+            // card.style.border="2px dashed red"
             card.style. borderRadius= "20px";
             card.style.height="200px"
             card.style.marginTop="15px" ;
             card.style.marginBottom="15px" ;
 
             let leftdiv=document.createElement("div")
-            leftdiv.style.border="2px dashed green"
+            // leftdiv.style.border="2px dashed green"
             leftdiv.style. borderRadius= "20px";
             leftdiv.style.width="40%"
 
             let rightdiv=document.createElement("div")
-            rightdiv.style.border="2px dashed blue"
+            // rightdiv.style.border="2px dashed blue"
             rightdiv.style. borderRadius= "20px";
             rightdiv.style.width="60%"
             rightdiv.style.padding="15px"
@@ -398,9 +405,10 @@ let NeededData=[]
 
 
             let divforrating=document.createElement("div")
-            divforrating.style.border="2px dashed blue"
-            divforrating.style.width="75%"
+            // divforrating.style.border="2px dashed blue"
+            divforrating.style.width="100%"
             divforrating.style.display="flex"
+            divforrating.style.justifyContent="space-between"
 
             let Rating=document.createElement("p")
             Rating.innerText=element.Rating+"/10"
@@ -419,8 +427,15 @@ let NeededData=[]
            
             Review.style.fontWeight="lighter"
 
+            let Reserve=document.createElement("button")
+            Reserve.innerText="Reserve"
+            Reserve.id="Reserve"
+            Reserve.addEventListener("click",()=>{
+                alert("Room Reserved")
+            })
 
-            divforrating.append(Rating,Review)
+
+            divforrating.append(Rating,Review,Reserve)
             rightdiv.append(Name,Area,Amenities,Payment_type,Price,text,divforrating)
             leftdiv.append(Image)
             card.append(leftdiv,rightdiv)

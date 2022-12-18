@@ -64,7 +64,7 @@
            border: none;
         }
         #container{
-            border: 2px dashed red; 
+            /* border: 2px dashed red;  */
             width:80%;
             margin: auto;
             display: flex;
@@ -73,14 +73,14 @@
             padding-top: 10px;
         }
         #containerleft{
-            border: 2px solid rgb(189, 65, 86); 
+            /* border: 2px solid rgb(189, 65, 86);  */
             width:90%;
             text-align: center;
             font-weight: bold;
             margin-right: 30px;
         }
         #containerright{
-            border: 2px solid darkblue; 
+            /* border: 2px solid darkblue;  */
             width:14%;
             height: 700px;
             position: sticky;
@@ -88,24 +88,24 @@
             z-index: 99999
         }
         #searchbar{
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             height:60px; 
             padding-top: 10px;
         }
         #belowsearch{
-            border: 2px solid orange; 
+            /* border: 2px solid orange;  */
             display: flex;
             justify-content: space-between;
             /* height:200px; */
         }
         #belowsearchleft{
-            border: 2px solid darkgreen; 
+            /* border: 2px solid darkgreen;  */
             width:28%;
             height: 160px;
             border-radius: 10px;
         }
         #belowsearchright{
-            border: 2px solid darkgreen; 
+            /* border: 2px solid darkgreen;  */
             width:70%;
         }
         #Sorting{
@@ -134,7 +134,7 @@
             height: 700px;
         }
         #belowsearchrightTop{
-            border: 2px solid orange; 
+            /* border: 2px solid orange;  */
             height:40%;
             text-align: left;
             display: flex;
@@ -145,7 +145,7 @@
         }
         #boxforp{
             width:45%;
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
         }
         #boxforp :nth-child(1){             
             font-weight: lighter;
@@ -181,22 +181,22 @@
 
         }
         #containerleftbottom{
-            border: 2px solid green;
+            /* border: 2px solid green; */
             display: flex; 
             justify-content: space-between;
         }
         #filtersection{
-            border: 2px solid blue; 
+            /* border: 2px solid blue;  */
             width: 28%;
             text-align: left;
         }
         #productsection{
-            border: 2px solid blue; 
+            /* border: 2px solid blue;  */
             width: 70%;                  
         }
         #search-propname{
             width: 90%;
-            border: 1px solid rgb(52, 50, 50);
+            /* border: 1px solid rgb(52, 50, 50); */
             margin-top: 10px;
             height: 40px;
             border-radius: 8px;
@@ -225,4 +225,128 @@
         }
         .makeitleft{
             margin-left: 27px;
+        }
+        #Reserve{
+            font-size:medium;
+            border-radius: 5px;
+            padding: 5px 20px 5px 20px;
+            background-color: #3662D8;
+            border: none;
+            color: white;
+            /* font-weight: bold; */
+            text-align: right;
+            margin-top: 5px;
+        }
+
+
+        #appdiv{
+            /* border: 2px solid rgb(4, 0, 255); */
+            display: flex;
+            justify-content: space-between;
+            width:80%;
+            margin: auto;
+            margin-top: 70px;
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #appdiv h1, #appdiv p, #appdiv h3, #links p{
+            margin:15px;
+        }
+        #appimagediv{
+            width:35%;
+        }
+        #appimagediv img{
+            width:100%;
+        }
+        #textdiv{
+            width:48%;
+            /* border: 2px solid rgb(255, 0, 221); */
+            
+        }
+        #scandiv{
+            width:13%;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
+        #scandiv img{
+            width:100%;
+        }
+        .Text_yourself{
+            font-size: large;
+            height:50px;
+            border-radius: 10px;
+            padding: 10px;
+            border-width: 1px;
+            width:31%;
+            justify-content: space-between;
+        }
+        #phone_number{
+            height:30px;
+        }
+        #Text_yourself{
+            padding: 0px;
+            font-size:medium;
+           border-radius: 5px;
+           background-color: #3662D8;
+           border: none;
+           color: white;
+           font-weight: bold;
+        }
+        #make_small{
+            font-size: smaller;
+        }
+
+
+        #expediagrpdiv{
+            /* border: 2px solid rgb(255, 8, 0); */
+            width:70%;
+            margin-left: 12%;
+            margin-top: 50px;
+            justify-content: space-between;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #links{
+            /* border: 2px solid rgb(217, 255, 0); */
+            display: flex;
+            justify-content: space-between;
+        }
+        .heads{
+            font-weight: 600;
+        }
+        .makeitblue{
+            font-size:12px;
+            color:#3662D8;
+        }
+        
+        
+        
+        #footer{
+            /* border: 3px dashed red; */
+            width:75%;
+            margin:auto;
+            margin-top: 40px;
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #footer>:nth-child(2){
+            margin-top: 20px;
+        }
+        #footer>:nth-child(3){
+            font-size:12px;
+        }
+        
+        @media screen and (max-width:1200px){
+            #container,#navbar,#memberpricediv,#appdiv,#DiscoverAnotherSide,#planaheaddiv,#explore,#expediagrpdiv,#footer{
+            width:90%;
+            margin: auto;
+            }
+        }
+        @media screen and (max-width:800px) {
+            #planaheaddiv{
+             display:block;   
+            }
+            #planaheaddiv>:nth-child(1),#planaheaddiv>:nth-child(2){
+                margin: auto; 
+            }
         }
