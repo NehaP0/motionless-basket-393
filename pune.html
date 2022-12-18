@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune</title>
+    
+    <link rel="stylesheet" href="pune.css" />
+</head>
+<body>
+    <div id="navbar">
+        <div id="leftside"> 
+            <a href="./home.html"><img id="logo" src="./yatra logo image.png" alt=""></a>
+            <select name="More travel" id="navbarSelect">
+                <option value="">More Travel </option>
+                <option value="">Stays</option>
+                <option value="">Flights</option>
+                <option value="">Cars</option>
+                <option value="">Packages</option>
+                <option value="">Holiday activities</option>
+                <option value="">Deals</option>
+                <option value="">Groups & meetings</option>
+                <option value="">Mobile</option>
+            </select>
+        </div>
+        <div id="rightside">
+            <p>🌐 English</p>
+            <p>Support</p>
+            <p>Trips</p>
+            <button id="bell"> <a href="./sign_in.html"> 🔔</button></a>
+            <p>Sign in</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="containerleft">
+            <div id="searchbar">
+                    <select name="" id="Going_To">
+                        <option >📍 Going To</option>
+                        <option>Pune, <br> Maharashtra, India</option>
+                        <option>Pune District, <br> Maharashtra, India</option>
+                        <option> Novotel Pune Vimanagar Hotel <br>Pune, Maharashtra, India</option>
+                        <option>Koregaon Park <br>Pune, Maharashtra, India</option>
+                        <option>Radisson Blu Hotel Pune Kharadi<br>Pune, Maharashtra, India</option>
+                        <option>The Westin Pune Koregaon Park <br>Pune, Maharashtra, India</option>
+                        <option>Hotel Aurora Towers<br>Pune, Maharashtra, India</option>
+                        <option>Hotel Shreyas<br>Pune, Maharashtra, India</option>
+                        <option> 🔍 Search for "Pune, Maharashtra, India"</option>
+                    </select>
+                    <input type="date" id="Date">
+                    <select name="" id="Travellers">
+                        <option>Travellers</option>
+                    </select>
+                    <button id="searchicon">🔍</button>
+            </div>
+            <div id="belowsearch">
+                <div id="belowsearchleft">
+                    <img id="mapimage" src="./map.PNG" alt="error">
+                    <p id="maplink"> <a href="https://www.expedia.co.in/Hotel-Search?adults=2&d1=2022-12-28&d2=2022-12-29&destination=Pune%2C%20Maharashtra%2C%20India&directFlights=false&endDate=2022-12-29&guestRating=&hotelName=&l10n=%5Bobject%20Object%5D&latLong=18.520433%2C73.856737&localDateFormat=dd%2FMM%2Fyyyy&neighborhood=6034585&partialStay=false&pwaOverlay=map&regionId=6034585&semdtl=&sort=RECOMMENDED&startDate=2022-12-28&theme=&useRewards=false&userIntent=">View in map</a></p>
+                    <hr> 
+                </div>
+                <div id="belowsearchright">
+                    <div id="belowsearchrightTop">
+                        <div id="boxforp"><p>217 properties</p>
+                        <p>See how we pick our recommended properties </p></div>
+                    
+                        <select name="" id="Sorting">
+                            <option >Sort by</option>
+                            <option >Recommended</option>
+                            <option >Price: low to high</option>
+                            <option >Price: high to low</option>
+                            <option >Distance from city centre</option>
+                            <option >Guest rating + our choices</option>
+                            <option >Property class</option>
+                        </select>
+                    </div>
+                    <div id="belowsearchrightBottom">
+                        <img src="https://a.travel-assets.com/pricing-claim/sparkle_dark.svg" alt="">
+                        <p>Save an average of 15% on thousands of hotels when you're signed in</p>
+                        <button id="Sign_in_button">Sign in</button>
+                    </div>
+                </div>
+            </div>
+            <div id="containerleftbottom">
+                <div id="filtersection">
+                    <div id="SearchByName" class="filteringsmalldivs">
+                        <h3>Search by property name</h3>
+                        <input type="text" id="search-propname" placeholder="🔍 e.g. Marriot"/>
+                        <hr>
+                    </div>
+                    <h3>Filter by</h3> 
+                    <div class="filteringsmalldivs"><p class="heads">Popular Filters</p>
+                        <input type="checkbox" id="one" value="Roll-in shower">Roll-in shower<br>
+                        <input type="checkbox"  id="two" value="Shreemant Dagdusheth Halwai Ganpati">Shreemant Dagdusheth Halwai Ganpati<br>                      
+                        <input type="checkbox" id="three" value="Lift">Lift<br>                       
+                        <input type="checkbox" id="four" value="Sign language-capable staff">Sign language-capable staff<br>                     
+                        <input type="checkbox" id="five" value="Hot tub">Hot tub 
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Price per night</p>
+                        <input type="checkbox" id="twothousand" >Less than ₹2,000<br>
+                        <input type="checkbox" id="fourthousand" >₹2,000 to ₹4,000<br>
+                        <input type="checkbox" id="eightthousand" >₹4,000 to ₹8,000<br>
+                        <input type="checkbox" id="eleventhousand">₹8,000 to ₹11,000<br>
+                        <input type="checkbox" id="greaterthaneleven">Greater than ₹11,000
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Guest rating</p>
+                        <input type="checkbox" id="Any">Any<br>
+                        <input type="checkbox" id="Wonderful">Wonderful 9+<br>
+                        <input type="checkbox" id="Very_good">Very good 8+<br>
+                        <input type="checkbox" id="Good">Good 7+ 
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Property class</p>
+                        <button id="1star">1 star</button>
+                        <button id="2star">2 stars</button>
+                        <button id="3star">3 stars</button>
+                        <button id="4star">4 stars</button>
+                        <button id="5star">5 stars</button>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Payment type</p>
+                        <input type="checkbox">Fully refundable<br>
+                        <input type="checkbox">Reserve now. pay later
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Property type</p>
+                        <input type="checkbox">House boat<br>
+                        <input type="checkbox">Cabin<br>
+                        <input type="checkbox">Cottage<br>
+                        <p class="makeItBlue">See more</p>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Area</p>
+                        <input type="checkbox">Pune<br>
+                        <input type="checkbox">Shivajinagar<br>
+                        <input type="checkbox">Viman Nagar<br>
+                        <p class="makeItBlue">See more</p> 
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Popular locations</p>
+                        <input type="checkbox">Balewadi High Street<br>
+                        <input type="checkbox">Shreemant Dagdusheth Halwai Ganpati<br>                        
+                        <input type="checkbox">Panshet Dam<br>
+                        <p class="makeItBlue">See more</p>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Meal plans available</p>
+                        <input type="checkbox">Breakfast included<br> 
+                        <input type="checkbox">Lunch included<br>
+                        <input type="checkbox">Dinner included<br>
+                        <p class="makeItBlue">See more</p>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Amenities</p>
+                        <input type="checkbox">Hot tub<br> 
+                        <input type="checkbox">Pool<br>
+                        <input type="checkbox">Water park<br>
+                        <p class="makeItBlue">See more</p>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Expedia Rewards</p>
+                        <input type="checkbox">VIP Access properties<br> 
+                                                <p class="makeitleft">Top-rated stays with member perks</p>
+                        <input type="checkbox">Member Prices<br>
+                                                <p class="makeitleft">Get instant savings when you become a member</p>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Accessibility</p>
+                        <input type="checkbox">Roll-in shower<br> 
+                        <input type="checkbox">Lift<br>
+                        <input type="checkbox">Sign language-capable staff<br>
+                        <p class="makeItBlue">See more</p>
+                    </div>
+                    <div class="filteringsmalldivs"><p class="heads">Traveller experience</p>
+                        <input type="checkbox">LGBTQ welcoming<br> 
+                                                <p class="makeitleft">See properties that pledge to make all guests feel safe, welcome and respected.</p>
+                        <input type="checkbox">Business-friendly<br>
+                                                <p class="makeitleft">See properties with amenities to help you work comfortably, like WiFi and breakfast.</p>
+                        <input type="checkbox">Family-friendly<br>
+                                                <p class="makeitleft">See properties that include family essentials like in-room conveniences and activities for the kids.</p>
+                    </div>
+                </div>
+                <div id="productsection">
+                    <!-- <div id="leftdiv"></div>
+                    <div id="rightdiv"></div> -->
+                </div>
+            </div>            
+        </div>
+        <div id="containerright">
+            <img id="exploreimg" src="https://tpc.googlesyndication.com/simgad/17447823249981941085?" alt="">
+        </div>
+    </div>
+
+    <div id="appdiv">
+        <div id="appimagediv"> <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg"> </div>
+        <div id="textdiv">
+            <div><h1>Go further with the Expedia app</h1>
+                <p>Save even more - Get up to 20% on select hotels and earn double the points when you book on the app. Our app deals help you to save on trips so you can travel more and managing it all on the go.</p>
+                <h3>Text yourself a download link for easy access</h3>
+                <div>
+                    <select name="" class="Text_yourself">
+                        <option value="">Country Code</option>
+                        <option value="">India +91</option>
+                    </select>
+                    <input id="phone_number" type="tel" placeholder="Phone number" class="Text_yourself">
+                    <button id="Text_yourself" class="Text_yourself">Get the app</button>
+                </div>
+                <p id="make_small">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+        </div>
+        <div id="scandiv"><img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/personaRelaunch/BEX-HP-default-CONTROL-27.png" alt=""> <p>Scan the QR code</p> </div>
+    </div>
+
+
+    <div id="expediagrpdiv">
+        <div><img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt=""></div>
+        <div id="links">
+            <div>
+                <p class="heads">Company</p>
+                <p class="makeitblue">About us</p>
+                <p class="makeitblue">Jobs</p>
+                <p class="makeitblue">List your property</p>
+                <p class="makeitblue">Partnerships</p>
+            </div>
+            <div>
+                <p class="heads">Explore</p>
+                <p class="makeitblue">India travel guide</p>
+                <p class="makeitblue">Hotels in India</p>
+                <p class="makeitblue">Holiday rentals in India</p>
+                <p class="makeitblue">Holiday packages in India</p>
+                <p class="makeitblue">Domestic flights</p>
+                <p class="makeitblue">Car hire in India</p>
+                <p class="makeitblue">All accommodation types</p>
+                <p class="makeitblue">Travel blog</p>
+            </div>
+            <div>
+                <p class="heads">Policies</p>
+                <p class="makeitblue">Privacy Statement</p>
+                <p class="makeitblue">Terms of use</p>
+                <p class="makeitblue">Vrbo terms and conditions</p>
+            </div>
+            <div>
+                <p class="heads">Help</p>
+                <p class="makeitblue">Support</p>
+                <p class="makeitblue">Change or cancel your booking</p>
+                <p class="makeitblue">Refund process and timelines</p>
+                <p class="makeitblue">Book a flight using an airline credit</p>
+                <p class="makeitblue">International travel documents</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <hr>
+        <div><img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt=""></div>
+        <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc</p>
+    </div>
+
+</body>
+</html>
+<script src="./pune.js"></script> 

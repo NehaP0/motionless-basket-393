@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        /* *{
+            margin: 0px;
+        } */
+       #container{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(55, 51, 51);
+            font-size: 14px;
+       }
+       h1{
+            text-align: left;
+       }
+        
+        #top{
+            border: 1px solid rgb(13, 3, 54);
+            display:flex;
+            height: 70px;            
+        }
+        #top>img{
+            display: block;
+            margin: auto;
+            height:70px;
+        }
+       #back{
+            align-self: center;
+            font-size:xx-large;
+        }
+        a, #makeitblue{
+            text-decoration: none;
+            color: rgb(60, 142, 193);
+        }
+        #main{
+            text-align: center;
+            /* border: 5px dashed green ; */
+            width:25%;
+            margin:auto;
+        }
+        button{
+            display: flex;
+            background-color: #1976D2;
+            color: white;
+            font-size: larger;
+            margin-bottom: 15px;
+            width:100%;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 15px;
+        }
+        #google img{
+            width:10%;
+            display: block;
+            text-align: left;
+            border-radius: 5px;
+            align-self: center;
+        }
+        #google>p{
+            display: block;
+            margin: auto;
+        }
+        form{
+            /* border: 2px dashed blue; */
+            margin-top: 15px;
+        }
+        form>input:nth-child(1),form>input:nth-child(3){
+            width: 100%;
+            display: block;
+            margin: auto;
+            border: 1px solid rgb(52, 50, 50);
+            margin-top: 10px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #check1, #check2{
+            display: flex;
+        }
+        #btn2>p{
+            display: block;
+            margin: auto;
+        }
+        #bottom{
+            display: flex;
+            width:20%;
+            margin: auto;
+            margin-top: 15px;
+            /* border: 1px dashed green; */
+        }
+        #bottom img{
+            width:20px;
+            display: block;
+            margin: auto;            
+        }
+        .left{
+            margin:0px;
+            padding: 0px;
+            text-align: left;
+            /* margin-top: 50px; */
+        }
+
+        @media screen and (max-width:1200px) and (min-width:1001px) {
+            #main{
+            width:40%;
+            }
+        }
+        @media screen and (max-width:1000px) and (min-width:801px) {
+            #main{
+            width:60%;
+            }
+        }
+        @media screen and (max-width:800px) and (min-width:601px) {
+            #main{
+            width:80%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            #main{
+            width:90%;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top"> 
+            <div id="back"> <a href="./index.html"> &larr;</a>  </div>
+            <img src="./yatra logo image.png" alt="error">
+        </div>
+        <div id="main"> 
+            <h1>Sign in</h1>
+            <p class="left">Save an average of 15% on thousands of hotels as a member---it's always free.</p>
+            <button id="google">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.bQFWLjAk0JQta4ZayBBRwAHaHa&pid=Api&P=0" alt=""><p>Sign in With Google</p> 
+            </button>
+            or
+            <form action="">
+                    <input class="inputs" id="input1" type="email" placeholder="Email address" >
+                    <span id="1"></span>
+                    
+                    <input class="inputs" id="input4" type="password" placeholder="Password"  >
+                    <span id="2"></span>
+                
+                <div class="left">
+                            <div id="check1">
+                                <input type="checkbox">
+                                                    <p>Keep me signed in</p>
+                            </div>
+                                                    <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
+                                </input>
+                            
+                            
+                        </form>
+                        <p>By creating an account, I agree to the Expedia<a href="https://www.expedia.co.in/terms">Terms and Conditions.</a><a href="https://www.expedia.co.in/privacy">Privacy Statement</a> and <a href="https://www.expedia.co.in/rewards/terms">Expedia Rewards Terms and Conditions.</a></p> 
+                </div>  
+             <button id="btn2"><p>Sign in</p> </button>
+             <p id="makeitblue"> Forgot password?</p>
+             <p>Don't have an account? <a id="sigin" href="./index.html"> Create one</a></p>
+             Other ways to sign up
+             <div id="bottom">
+                <img src="https://tse2.mm.bing.net/th?id=OIP._lX2vmNg6aIlPDaNn_SNbAHaJG&pid=Api&P=0" alt="error">
+                <img src="https://tse4.explicit.bing.net/th?id=OIP.aYVbqEFb2M-SWsBh_LafIQHaHa&pid=Api&P=0" alt="error">
+             </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    
+let signInbtn = document.getElementById("btn2")
+let myform = document.querySelector("form")
+let data= JSON.parse(localStorage.getItem("datainfo"))||[] 
+let data2=JSON.parse(localStorage.getItem("data2info"))||[] 
+
+
+signInbtn.addEventListener("click", ()=>{ 
+        let obj2={
+                email:myform.input1.value,
+                pw:myform.input4.value
+        }
+        data2.push(obj2)        
+        localStorage.setItem("data2info",JSON.stringify(data2 ) )
+        
+
+        data.forEach(element => {
+           //console.log( element.pw) 
+            if(obj2.email=== element.email && obj2.pw===element.pw){
+            
+                window.location="welcome.html"
+            }
+            else {
+                
+                alert("Invalid email or password")
+            }            
+        });       
+      
+})
+
+</script>
